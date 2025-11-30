@@ -1,0 +1,139 @@
+/*  base */
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #1e1e1e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .nav-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar .logo { font-size: 24px; font-weight: bold; }
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1589820296156-2454bb8a6b8c?auto=format&q=80&w=1600') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.hero p { font-size: 20px; margin-bottom: 20px; }
+.btn {
+  background: #c19a5b;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn:hover { background: #a88349; }
+
+/* Section */
+.section { padding: 60px 40px; max-width: 1100px; margin: auto; }
+.section h2 { text-align: center; margin-bottom: 40px; font-size: 32px; }
+
+/* services */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 260px;
+  text-align: center;
+}
+.card h3 { margin-bottom: 12px; }
+.card p { font-size: 15px; color: #555; }
+
+/* Team */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.member img {
+  width: 100%;
+  border-radius: 8px;
+  height: 260px;
+  object-fit: cover;
+}
+.member h3 { margin: 15px 0 5px; }
+.member p { font-size: 15px; color: #555; }
+
+/* Contact form */
+.contact form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-cards, .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar { padding: 10px 20px; }
+}

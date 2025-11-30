@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law Firm – Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">⚖️ Law & Associates</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- home -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Trusted Legal Services for You</h1>
+      <p>Experienced. Reliable. Committed to Justice.</p>
+      <button class="btn" onclick="scrollToSection('contact')">Get Consultation</button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services section">
+    <h2>Our Practice Areas</h2>
+    <div class="service-cards">
+      <div class="card"><h3>Criminal Litigation</h3><p>Anticipatory bail, defense & more.</p></div>
+      <div class="card"><h3>Civil & Property Law</h3><p>Property disputes, wills, probate, succession.</p></div>
+      <div class="card"><h3>Corporate & Commercial Law</h3><p>Contracts, compliance, advisory.</p></div>
+      <div class="card"><h3>Family & Matrimonial Law</h3><p>Divorce, custody, family disputes.</p></div>
+      <div class="card"><h3>IP & IPR / Consumer Law</h3><p>Trademark, copyright, consumer rights.</p></div>
+    </div>
+  </section>
+
+  <!-- Team members -->
+  <section id="team" class="team section">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <img src="senior.jpg" alt="Partner 1">
+        <h3>Senior Advocate</h3>
+        <p>Criminal & Civil Expert</p>
+      </div>
+      <div class="member">
+        <img src="lawyer.jpg" alt="Partner 2">
+        <h3>Corporate Lawyer</h3>
+        <p>Corporate & Commercial Law</p>
+      </div>
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&q=80&w=600" alt="Partner 3">
+        <h3>Associate</h3>
+        <p>Family & Matrimonial Law</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="responseMsg"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Law & Associates. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
